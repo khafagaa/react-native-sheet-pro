@@ -11,12 +11,18 @@
     "react-native",
     "react-native-sheet",
     "react-native-sheet-pro",
-    "sheet-pro",
+    "react-native-bottom-sheet",
     "bottom-sheet",
     "modal",
+    "action-sheet",
     "popup",
+    "toast",
     "flex-sheet",
+    "sheet-pro",
     "react-native-modal",
+    "blur",
+    "gesture-handler",
+    "reanimated",
     "ios",
     "android"
   ],
@@ -24,7 +30,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/khafaga/react-native-sheet-pro.git"
+    "url": "https://github.com/khafagaa/react-native-sheet-pro.git"
+  },
+  "homepage": "https://github.com/khafagaa/react-native-sheet-pro#readme",
+  "bugs": {
+    "url": "https://github.com/khafagaa/react-native-sheet-pro/issues"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
