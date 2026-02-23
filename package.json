@@ -1,0 +1,42 @@
+{
+  "name": "@khafagaa/react-native-sheet-pro",
+  "version": "1.0.0",
+  "description": "A flexible sheet/modal library for React Native. Supports bottom sheets, center popups, and position-based content (top, center, bottom).",
+  "main": "index.ts",
+  "types": "index.ts",
+  "scripts": {
+    "prepare": "echo 'No build step - shipping TypeScript source'"
+  },
+  "keywords": [
+    "react-native",
+    "react-native-sheet",
+    "react-native-sheet-pro",
+    "sheet-pro",
+    "bottom-sheet",
+    "modal",
+    "popup",
+    "flex-sheet",
+    "react-native-modal",
+    "ios",
+    "android"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khafaga/react-native-sheet-pro.git"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-native": ">=0.70.0",
+    "react-native-gesture-handler": ">=2.0.0",
+    "react-native-reanimated": ">=3.0.0",
+    "@react-native-community/blur": ">=4.0.0"
+  },
+  "files": [
+    "*.ts",
+    "*.tsx",
+    "examples",
+    "README.md"
+  ]
+}

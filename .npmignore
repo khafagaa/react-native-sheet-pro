@@ -1,0 +1,25 @@
+# Development
+*.log
+.DS_Store
+node_modules/
+
+# Docs/screenshots (optional - remove if you want to include)
+docs/
+scripts/
+
+# Examples - optional, can include for reference
+# examples/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Test
+__tests__/
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+coverage/
