@@ -4,7 +4,15 @@ A flexible, reusable sheet/modal library for React Native. Supports bottom sheet
 
 ## Installation
 
-This library is already included in the project at `libraries/sheet`.
+```bash
+npm install @khafagaa/react-native-sheet-pro
+```
+
+OR
+
+```bash
+yarn add @khafagaa/react-native-sheet-pro
+```
 
 ### Dependencies
 
@@ -20,11 +28,11 @@ yarn add react-native-gesture-handler react-native-reanimated @react-native-comm
 
 ### React Native & Reanimated Compatibility
 
-| React Native | Reanimated | Worklets | Babel plugin |
-|--------------|------------|----------|--------------|
-| **0.74** (Legacy) | 3.x | — | `react-native-reanimated/plugin` |
-| **0.78–0.82** | 4.1.x | 0.5.x | `react-native-worklets/plugin` |
-| **0.80–0.84** | 4.2.x | 0.7.x | `react-native-worklets/plugin` |
+| React Native      | Reanimated | Worklets | Babel plugin                     |
+| ----------------- | ---------- | -------- | -------------------------------- |
+| **0.74** (Legacy) | 3.x        | —        | `react-native-reanimated/plugin` |
+| **0.78–0.82**     | 4.1.x      | 0.5.x    | `react-native-worklets/plugin`   |
+| **0.80–0.84**     | 4.2.x      | 0.7.x    | `react-native-worklets/plugin`   |
 
 **RN 0.74:** Use Reanimated 3.x. No `react-native-worklets` needed. Use `react-native-reanimated/plugin` in Babel.
 
@@ -78,7 +86,7 @@ const AlertSheet = ({title, message, onClose}) => (
 ### 3. Set Up in App
 
 ```typescript
-import {SheetHandler, SheetHandlerRef} from '@libraries/sheet';
+import {SheetHandler, SheetHandlerRef} from '@khafagaa/react-native-sheet-pro';
 
 <SheetHandler
   ref={SheetHandlerRef}
@@ -97,7 +105,7 @@ import {SheetHandler, SheetHandlerRef} from '@libraries/sheet';
 ### 4. Show Sheets
 
 ```typescript
-import {showSheet, hideSheet} from '@libraries/sheet';
+import {showSheet, hideSheet} from '@khafagaa/react-native-sheet-pro';
 
 // Show
 showSheet({
@@ -131,7 +139,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import {hideSheet} from '@sheet';
+import {hideSheet} from '@khafagaa/react-native-sheet-pro';
 
 const TopSheetExample = () => (
   <SafeAreaView style={styles.container}>
@@ -177,7 +185,7 @@ Content centered in the modal. Ideal for dialogs, confirmations, or alerts.
 // CenterSheetExample.tsx
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import {hideSheet} from '@sheet';
+import {hideSheet} from '@khafagaa/react-native-sheet-pro';
 
 const CenterSheetExample = () => (
   <View style={styles.container}>
@@ -222,7 +230,7 @@ Content anchored at the bottom. Ideal for action sheets, toasts, or bottom-ancho
 // BottomSheetExample.tsx
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import {hideSheet} from '@sheet';
+import {hideSheet} from '@khafagaa/react-native-sheet-pro';
 
 const BottomSheetExample = () => (
   <View style={styles.container}>
@@ -263,8 +271,13 @@ const styles = StyleSheet.create({
 In this project, the sheet setup lives in **`App.tsx`** → **`AppWrapper`** → **`BottomSheetWrapper`**. Add the position examples (Top, Center, Bottom) to your `SheetHandler` in `BottomSheetWrapper`:
 
 ```tsx
-import {SheetHandler, SheetHandlerRef} from '@libraries/sheet';
-import {TopSheetExample, CenterSheetExample, BottomSheetExample} from '@sheet';
+import {
+  SheetHandler,
+  SheetHandlerRef,
+  TopSheetExample,
+  CenterSheetExample,
+  BottomSheetExample,
+} from '@khafagaa/react-native-sheet-pro';
 
 enum SheetEnums {
   TOP = 'Top',
@@ -379,7 +392,10 @@ The `sheetEnums` prop enables validation that helps catch configuration errors e
 Subscribe to sheet show/hide events for analytics, state sync, or pause/resume logic:
 
 ```typescript
-import {registerSheetShowListener, registerSheetHideListener} from '@sheet';
+import {
+  registerSheetShowListener,
+  registerSheetHideListener,
+} from '@khafagaa/react-native-sheet-pro';
 
 useEffect(() => {
   const unsubscribeShow = registerSheetShowListener(sheetState => {
@@ -441,5 +457,5 @@ import {
   SheetHandlerRefType,
   SheetProviderProps,
   ShowSheetParams,
-} from '@libraries/sheet';
+} from '@khafagaa/react-native-sheet-pro';
 ```
