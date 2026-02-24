@@ -1,6 +1,6 @@
 {
   "name": "@khafagaa/react-native-sheet-pro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A flexible sheet/modal library for React Native. Supports bottom sheets, center popups, and position-based content (top, center, bottom).",
   "main": "index.ts",
   "types": "index.ts",
